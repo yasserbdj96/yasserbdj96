@@ -1,3 +1,7 @@
+
+
+<br><br>
+
 <p align="center">
   <samp>
     <a href="https://yasserbdj96.github.io/">website</a> .
@@ -16,3 +20,12 @@
     <a href="https://ko-fi.com/yasserbdj96">sponsor</a>
   </samp>
 </p>
+
+
+<br>
+<div align="center">
+    <a href="https://ko-fi.com/yasserbdj96">
+        <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="hiphp by yasserbdj96">
+    </a><br>
+    BTC: bc1q2dks8w8uurca5xmfwv4jwl7upehyjjakr3xga9<br>
+</div>

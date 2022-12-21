@@ -5,7 +5,7 @@
 [ESP32_FTP_Server](https://github.com/yasserbdj96/ESP32_FTP_Server) - ESP32 FTP Server.</br></br>
 [Progressive_Web_Apps](https://github.com/yasserbdj96/Progressive_Web_Apps) - PWA | Progressive Web Apps.</br></br>
 [MML](https://github.com/yasserbdj96/MML) - This project is to review all the movies that I watched since 2018, after I put the name of the movie or series in the src/my_list.json file, the bot will search for the poster and put it on the site https://yasserbdj96.github.io/MML/</br></br>
-[my_followers](https://github.com/yasserbdj96/my_followers) - This project is based on the github api. It will run every 24 hours in order to follow the users who have followed me and unfollow the users who have unfollowed me. https://yasserbdj96.github.io/my_followers/</br></br>
+[Followers-Bot-GithubAPI](https://github.com/yasserbdj96/Followers-Bot-GithubAPI) - This project is based on the github api. It will run every 24 hours in order to follow the users who have followed me and unfollow the users who have unfollowed me. https://yasserbdj96.github.io/Followers-Bot-GithubAPI/</br></br>
 
 
 <p align="center">

@@ -9,23 +9,6 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.achievements.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_achievements: yes
-          plugin_achievements_only: polyglot, stargazer, deployer, member, maintainer, developer
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: X
-
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.followup.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_followup: yes
-
       - name: Indepth analysis
         uses: lowlighter/metrics@latest
         with:
@@ -39,3 +22,13 @@ jobs:
           plugin_languages_details: lines, bytes-size
           plugin_languages_limit: 4
           plugin_languages_analysis_timeout: 15
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.wakatime.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_wakatime: yes
+          plugin_wakatime_sections: time, languages-graphs
+          plugin_wakatime_days: 365
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}

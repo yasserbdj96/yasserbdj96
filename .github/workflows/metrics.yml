@@ -26,29 +26,16 @@ jobs:
           base: ""
           plugin_followup: yes
 
-      - uses: lowlighter/metrics@latest
+      - name: Indepth analysis
+        uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.topics.icons.svg
-          token: NOT_NEEDED
-          base: ""
-          plugin_topics: yes
-          plugin_topics_limit: 0
-          plugin_topics_mode: icons
-
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.wakatime.svg
+          filename: metrics.plugin.languages.indepth.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          plugin_wakatime: yes
-          plugin_wakatime_sections: time, languages-graphs
-          plugin_wakatime_days: 365
-          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
-
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.isocalendar.fullyear.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          plugin_languages: yes
+          plugin_languages_ignored: >-
+            html, css, php, py, dockerfile, makefile
+          plugin_languages_indepth: yes
+          plugin_languages_details: lines, bytes-size
+          plugin_languages_limit: 4
+          plugin_languages_analysis_timeout: 15

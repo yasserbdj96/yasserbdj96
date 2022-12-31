@@ -9,7 +9,6 @@
 - [fennec-framework](https://github.com/yasserbdj96/fennec-framework) - PHP-based Framework.</br></br>
 - [safe-passwd](https://github.com/yasserbdj96/safe-passwd) - In order to save all passwords as a list that can be accessed securely with a high level of encryption.</br></br>
 
-
 <p align="center">
   <samp>
     <a href="https://yasserbdj96.github.io/">website</a> .

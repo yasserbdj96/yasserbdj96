@@ -1,5 +1,5 @@
 ## Project Showcase
-- [hiphp](https://github.com/yasserbdj96/hiphp) - Free & open source project for create a BackDoor to control PHP-based sites.</br></br>
+- [hiphp](https://github.com/yasserbdj96/hiphp) - The BackDoor of HIPHP gives you the power to control websites based on PHP using HTTP/HTTPS protocol. By sending files, tokens and commands through port 80's POST/GET method, users can access a range of activities such as downloading and editing files. It also allows for connecting to Tor networks with password protection for extra security.</br></br>
 - [ashar](https://github.com/yasserbdj96/ashar) - Free & open source project for text encryption with password protection.</br></br>
 - [imbot](https://github.com/yasserbdj96/imbot) - create a bot to control any website.</br></br>
 - [ESP32-FTP-Server](https://github.com/yasserbdj96/ESP32-FTP-Server) - ESP32 FTP Server.</br></br>

@@ -37,7 +37,7 @@
         <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="yasserbdj96">
     </a><br>
     BTC: bc1q2dks8w8uurca5xmfwv4jwl7upehyjjakr3xga9<br><br>
-    <img src="https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96&format=true" alt="yasserbdj96 Visitors"> 
+    <!--img src="https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96&format=true" alt="yasserbdj96 Visitors"--> 
     <img src="https://eney6oltpbr3kt.m.pipedream.net/" alt="Most Active GitHub User in Algeria Rank"> 
 </div>
 

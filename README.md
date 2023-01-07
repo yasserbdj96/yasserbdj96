@@ -1,4 +1,11 @@
-## Project Showcase
+<div align="center">
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96&format=true" alt="yasserbdj96 Visitors"> 
+    <img src="https://eney6oltpbr3kt.m.pipedream.net/" alt="Most Active GitHub User in Algeria Rank"> 
+    <a href="https://wakatime.com/@d6d361fc-4abd-4305-b82f-15977e27deed"><img src="https://wakatime.com/badge/user/d6d361fc-4abd-4305-b82f-15977e27deed.svg" alt="Total time coded since Dec 25 2022" /></a>
+</div><br>
+
+
+## Project Showcase:
 - [hiphp](https://github.com/yasserbdj96/hiphp) - The BackDoor of HIPHP gives you the power to control websites based on PHP using HTTP/HTTPS protocol. By sending files, tokens and commands through port 80's POST/GET method, users can access a range of activities such as downloading and editing files. It also allows for connecting to Tor networks with password protection for extra security.</br></br>
 - [ashar](https://github.com/yasserbdj96/ashar) - Free & open source project for text encryption with password protection.</br></br>
 - [imbot](https://github.com/yasserbdj96/imbot) - create a bot to control any website.</br></br>
@@ -37,8 +44,6 @@
         <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="yasserbdj96">
     </a><br>
     BTC: bc1q2dks8w8uurca5xmfwv4jwl7upehyjjakr3xga9<br><br>
-    <!--img src="https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96&format=true" alt="yasserbdj96 Visitors"--> 
-    <img src="https://eney6oltpbr3kt.m.pipedream.net/" alt="Most Active GitHub User in Algeria Rank"> 
 </div>
 
 

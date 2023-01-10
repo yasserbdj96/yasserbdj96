@@ -15,6 +15,8 @@
 - [Followers-Bot-GithubAPI](https://github.com/yasserbdj96/Followers-Bot-GithubAPI) - This bot is programmed on GithubAPI in order to increase the number of followers on github, it follows about 9 people every 20 minutes, or about 600 every 24 hours, and follows those who follow me every 24 hours, and unfollows members who have been followed and did not follow me every week. https://yasserbdj96.github.io/Followers-Bot-GithubAPI/</br></br>
 - [fennec-framework](https://github.com/yasserbdj96/fennec-framework) - PHP-based Framework.</br></br>
 - [safe-passwd](https://github.com/yasserbdj96/safe-passwd) - In order to save all passwords as a list that can be accessed securely with a high level of encryption.</br></br>
+- [hexor](https://github.com/yasserbdj96/hexor) - Coloring texts and their backgrounds in command line interface (cli), with rgb or hex types.</br></br>
+- [empty](https://github.com/yasserbdj96/empty) - A simple bot for coloring github contributions in order to form words or shapes as you want, This process takes a whole year.</br></br>
 
 
 <p align="center">

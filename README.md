@@ -1,3 +1,11 @@
+## About Me:
+
+<p>I am a freelance web developer, software engineer, cybersecurity and Arduino developer since 2010. I graduated with a Bachelor's degree in Electromechanical Engineering from Algeria. When I'm not busy working on projects for clients, I like to build free open-source or paid software applications and websites as well as help other programmers or teams solve coding issues they may have. My favorite thing to do is create algorithms and complicated codes that can be used to build new exciting things for computers! In my spare time you will usually find me sleeping or watching movies, animes or series - all of which are great ways for me to relax after long days of programming!
+
+all posts <a href="#">#yasserbdj96</a> ,all views my own.
+
+</p>
+
 <div align="center">
     <img src="https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96&format=true" alt="yasserbdj96 Visitors"> 
     <img src="https://eney6oltpbr3kt.m.pipedream.net/" alt="Most Active GitHub User in Algeria Rank"> 

@@ -25,6 +25,7 @@ all posts <a href="#">#yasserbdj96</a> ,all views my own.
 - [safe-passwd](https://github.com/yasserbdj96/safe-passwd) - Password manager to save all passwords as a securely accessible list with high level of encryption.</br></br>
 - [hexor](https://github.com/yasserbdj96/hexor) - Coloring texts and their backgrounds in command line interface (cli), with rgb or hex types.</br></br>
 - [empty](https://github.com/yasserbdj96/empty) - A simple bot for coloring github contributions in order to form words or shapes as you want, This process takes a whole year.</br></br>
+- [kryptospy](https://github.com/yasserbdj96/kryptospy) - Text encryption using a password, making it impossible to decrypt without the password.</br></br>
 
 
 <p align="center">

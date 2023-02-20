@@ -16,7 +16,7 @@ all posts <a href="#">#yasserbdj96</a> ,all views my own.
 ## Project Showcase:
 - [hiphp](https://github.com/yasserbdj96/hiphp) - The BackDoor of HIPHP gives you the power to control websites based on PHP using HTTP/HTTPS protocol. By sending files, tokens and commands through port 80's POST/GET method, users can access a range of activities such as downloading and editing files. It also allows for connecting to Tor networks with password protection for extra security.</br></br>
 - [ashar](https://github.com/yasserbdj96/ashar) - Free & open source project for text encryption with password protection.</br></br>
-- [imbot](https://github.com/yasserbdj96/imbot) - create a bot to control any website.</br></br>
+- [imbot](https://github.com/yasserbdj96/imbot) - is an automation tool for website control. Simplify your workflow and automate repetitive tasks with ease.</br></br>
 - [ESP32-FTP-Server](https://github.com/yasserbdj96/ESP32-FTP-Server) - ESP32 FTP Server.</br></br>
 - [Progressive-Web-Apps](https://github.com/yasserbdj96/Progressive-Web-Apps) - PWA | Progressive Web Apps. https://yasserbdj96.github.io/Progressive-Web-Apps/</br></br>
 - [MML](https://github.com/yasserbdj96/MML) - This project is to review all the movies that I watched since 2018, after I put the name of the movie or series in the src/my_list.json file, the bot will search for the poster and put it on the site https://yasserbdj96.github.io/MML/</br></br>

@@ -44,18 +44,17 @@ all posts <a href="#">#yasserbdj96</a> ,all views my own.
     <a href="https://gitter.im/yasserbdj96/yasserbdj96">gitter</a> .
     <a href="https://wakatime.com/@yasserbdj96">wakatime</a> .
     <a href="mailto:yasser.bdj96@gmail.com">e-mail</a> .
-    <a href="https://ko-fi.com/yasserbdj96">sponsor</a>
+    <a href="https://github.com/sponsors/yasserbdj96">sponsor</a>
   </samp>
 </p>
 
-
-<br>
+<!--br>
 <div align="center">
     <a href="https://ko-fi.com/yasserbdj96">
         <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="yasserbdj96">
     </a><br>
     BTC: bc1q2dks8w8uurca5xmfwv4jwl7upehyjjakr3xga9<br><br>
-</div>
+</div-->
 
 
 ![](https://hit.yhype.me/github/profile?user_id=24677945)

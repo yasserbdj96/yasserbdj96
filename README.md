@@ -2,7 +2,9 @@
 
 <p>I am a freelance web developer, software engineer, cybersecurity and Arduino developer since 2010. I graduated with a Bachelor's degree in Electromechanical Engineering from Algeria. When I'm not busy working on projects for clients, I like to build free open-source or paid software applications and websites as well as help other programmers or teams solve coding issues they may have. My favorite thing to do is create algorithms and complicated codes that can be used to build new exciting things for computers! In my spare time you will usually find me sleeping or watching movies, animes or series - all of which are great ways for me to relax after long days of programming!
 
-all posts <a href="#">#yasserbdj96</a> ,all views my own.</p>
+all posts <a href="#">#yasserbdj96</a> ,all views my own.
+
+</p>
 
 <div align="center">
     <img src="https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96&format=true" alt="yasserbdj96 Visitors"> 
@@ -10,19 +12,21 @@ all posts <a href="#">#yasserbdj96</a> ,all views my own.</p>
     <a href="https://wakatime.com/@d6d361fc-4abd-4305-b82f-15977e27deed"><img src="https://wakatime.com/badge/user/d6d361fc-4abd-4305-b82f-15977e27deed.svg" alt="Total time coded since Dec 25 2022" /></a>
 </div><br>
 
+
 ## Project Showcase:
 - [hiphp](https://github.com/yasserbdj96/hiphp) - The BackDoor of HIPHP gives you the power to control websites based on PHP using HTTP/HTTPS protocol. By sending files, tokens and commands through port 80's POST/GET method, users can access a range of activities such as downloading and editing files. It also allows for connecting to Tor networks with password protection for extra security.</br></br>
 - [ashar](https://github.com/yasserbdj96/ashar) - Free & open source project for text encryption with password protection.</br></br>
 - [imbot](https://github.com/yasserbdj96/imbot) - is an automation tool for website control. Simplify your workflow and automate repetitive tasks with ease.</br></br>
 - [ESP32-FTP-Server](https://github.com/yasserbdj96/ESP32-FTP-Server) - ESP32 FTP Server.</br></br>
 - [Progressive-Web-Apps](https://github.com/yasserbdj96/Progressive-Web-Apps) - PWA | Progressive Web Apps. https://yasserbdj96.github.io/Progressive-Web-Apps/</br></br>
-- [MML](https://github.com/yasserbdj96/MML) - This project is to review all the movies that I watched since 2018, after I put the name of the movie or series in the src/my_list.json file, the bot will search for the poster and put it on the site https://yasserbdj96.github.io/MML/</br></br>
+- [Movie-Memoir](https://github.com/yasserbdj96/Movie-Memoir) - This project is to review all the movies that I watched since 2018, after I put the name of the movie or series in the src/my_list.json file, the bot will search for the poster and put it on the site https://yasserbdj96.github.io/Movie-Memoir/</br></br>
 - [Followers-Bot-GithubAPI](https://github.com/yasserbdj96/Followers-Bot-GithubAPI) - This bot is programmed on GithubAPI in order to increase the number of followers on github, it follows about 9 people every 20 minutes, or about 600 every 24 hours, and follows those who follow me every 24 hours, and unfollows members who have been followed and did not follow me every week. https://yasserbdj96.github.io/Followers-Bot-GithubAPI/</br></br>
 - [fennec-framework](https://github.com/yasserbdj96/fennec-framework) - PHP-based Framework.</br></br>
 - [safe-passwd](https://github.com/yasserbdj96/safe-passwd) - Password manager to save all passwords as a securely accessible list with high level of encryption.</br></br>
 - [hexor](https://github.com/yasserbdj96/hexor) - Coloring texts and their backgrounds in command line interface (cli), with rgb or hex types.</br></br>
 - [empty](https://github.com/yasserbdj96/empty) - A simple bot for coloring github contributions in order to form words or shapes as you want, This process takes a whole year.</br></br>
 - [kryptospy](https://github.com/yasserbdj96/kryptospy) - Text encryption using a password, making it impossible to decrypt without the password.</br></br>
+
 
 <p align="center">
   <samp>
@@ -48,7 +52,9 @@ all posts <a href="#">#yasserbdj96</a> ,all views my own.</p>
 <div align="center">
     <a href="https://ko-fi.com/yasserbdj96">
         <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="yasserbdj96">
-    </a><br>BTC: bc1q2dks8w8uurca5xmfwv4jwl7upehyjjakr3xga9<br><br>
+    </a><br>
+    BTC: bc1q2dks8w8uurca5xmfwv4jwl7upehyjjakr3xga9<br><br>
 </div-->
+
 
 ![](https://hit.yhype.me/github/profile?user_id=24677945)

@@ -19,7 +19,7 @@ all posts <a href="#">#yasserbdj96</a> ,all views my own.
 - [imbot](https://github.com/yasserbdj96/imbot) - is an automation tool for website control. Simplify your workflow and automate repetitive tasks with ease.</br></br>
 - [ESP32-FTP-Server](https://github.com/yasserbdj96/ESP32-FTP-Server) - ESP32 FTP Server.</br></br>
 - [Progressive-Web-Apps](https://github.com/yasserbdj96/Progressive-Web-Apps) - PWA | Progressive Web Apps. https://yasserbdj96.github.io/Progressive-Web-Apps/</br></br>
-- [Movie-Memoir](https://github.com/yasserbdj96/Movie-Memoir) - This project is to review all the movies that I watched since 2018, after I put the name of the movie or series in the src/my_list.json file, the bot will search for the poster and put it on the site https://yasserbdj96.github.io/Movie-Memoir/</br></br>
+- [watchList-explorer](https://github.com/yasserbdj96/watchList-explorer) - The aim of this project is to document my reviews of all the movies, series, and anime that I have watched since 2018.</br></br>
 - [Followers-Bot-GithubAPI](https://github.com/yasserbdj96/Followers-Bot-GithubAPI) - This bot is programmed on GithubAPI in order to increase the number of followers on github, it follows about 9 people every 20 minutes, or about 600 every 24 hours, and follows those who follow me every 24 hours, and unfollows members who have been followed and did not follow me every week (Excessive use of this bot may result in a ban).</br></br>
 - [fennec-framework](https://github.com/yasserbdj96/fennec-framework) - PHP-based Framework.</br></br>
 - [safe-passwd](https://github.com/yasserbdj96/safe-passwd) - Password manager to save all passwords as a securely accessible list with high level of encryption.</br></br>

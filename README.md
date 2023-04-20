@@ -24,7 +24,7 @@ all posts <a href="#">#yasserbdj96</a> ,all views my own.
 - [fennec-framework](https://github.com/yasserbdj96/fennec-framework) - PHP-based Framework.</br></br>
 - [safe-passwd](https://github.com/yasserbdj96/safe-passwd) - Password manager to save all passwords as a securely accessible list with high level of encryption.</br></br>
 - [hexor](https://github.com/yasserbdj96/hexor) - Coloring texts and their backgrounds in command line interface (cli), with rgb or hex types.</br></br>
-- [empty](https://github.com/yasserbdj96/empty) - A simple bot for coloring github contributions in order to form words or shapes as you want, This process takes a whole year.</br></br>
+- [artbot](https://github.com/yasserbdj96/artbot) - This is a bot that colors your Github contributions to create custom shapes or words of your choice, but be prepared for the long haul as the process takes an entire year.</br></br>
 - [kryptospy](https://github.com/yasserbdj96/kryptospy) - Text encryption using a password, making it impossible to decrypt without the password.</br></br>
 
 

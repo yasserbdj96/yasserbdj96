@@ -11,8 +11,8 @@ all posts <a href="#">#yasserbdj96</a> ,all views my own.
     <a href="https://wakatime.com/@d6d361fc-4abd-4305-b82f-15977e27deed">
       <img src="https://wakatime.com/badge/user/d6d361fc-4abd-4305-b82f-15977e27deed.svg" alt="Total time coded since Dec 25 2022" />
     </a>
-    <a href="https://github.com/yasserbdj96/CodeLineCounter">
-      <img src="https://raw.githubusercontent.com/yasserbdj96/CodeLineCounter/main/badges/total_lines.svg" alt="Total Lines of Code (GitHub Repos)" />
+    <a href="https://github.com/yasserbdj96/GitHubLineCounter">
+      <img src="https://raw.githubusercontent.com/yasserbdj96/GitHubLineCounter/main/badges/total_lines.svg" alt="Total Lines of Code (GitHub Repos)" />
     </a>
     <br>
     <img src="https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96&format=true" alt="yasserbdj96 Visitors">

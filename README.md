@@ -33,6 +33,7 @@ all posts <a href="#">#yasserbdj96</a> ,all views my own.
 - [artbot](https://github.com/yasserbdj96/artbot) - This is a bot that colors your Github contributions to create custom shapes or words of your choice, but be prepared for the long haul as the process takes an entire year.</br></br>
 - [kryptospy](https://github.com/yasserbdj96/kryptospy) - Text encryption using a password, making it impossible to decrypt without the password.</br></br>
 - [GitHubLineCounter](https://github.com/yasserbdj96/GitHubLineCounter) - Line counts in GitHub repos, incl. empty & comment lines for multiple languages.</br></br>
+- [linesofcode](https://github.com/yasserbdj96/linesofcode) - This GitHub Action workflow helps you generate a badge displaying the lines of code in your repository.</br></br>
 
 
 <p align="center">

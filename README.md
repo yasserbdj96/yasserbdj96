@@ -1,15 +1,29 @@
-# 🚨 **[WebHole](https://github.com/yasserbdj96/WebHole)** – Coming Soon 
+# 👋 Hi, I'm Yasser! 
 
-I'm currently working on a powerful new project called **[WebHole](https://github.com/yasserbdj96/WebHole)** — a modern, multi-language web access and control platform inspired by the capabilities of **[HIPHP](https://github.com/yasserbdj96/hiphp)**.
+Welcome to my GitHub profile.
 
-**[HIPHP](https://github.com/yasserbdj96/hiphp)** is an open-source, PHP-based backdoor tool that allows secure, remote control over websites via HTTP/HTTPS. It supports file editing, downloading, and even Tor network integration, offering flexibility and password-protected security for site administrators.
+🚀 I'm a passionate programmer and software developer focused on building tools, web apps, and creative tech projects.  
+🔧 I enjoy working with Python, Flask, JavaScript, and embedded systems like Arduino.  
+🌍 Visit my portfolio: [yasserbdj96.github.io](https://yasserbdj96.github.io/)
 
-Building on this foundation, **[WebHole](https://github.com/yasserbdj96/WebHole)** expands the concept beyond PHP — introducing support for multiple web languages while maintaining a strong focus on security, simplicity, and full control. It's designed for developers and webmasters who want a universal, open-source solution to manage and interact with their servers remotely without relying on third-party services.
+## 🛠️ What I Do
+- 🔨 Build web applications using **Flask** and **JavaScript**
+- 🎮 Create desktop software and tools from scratch
+- ⚙️ Tinker with **Arduino** and hardware-based projects
+- 🌐 Design full-stack solutions with custom APIs and database structures
 
-> **Key Features (Planned):**
-> - Multi-language support (not limited to PHP)
-> - Encrypted and password-protected communication
-> - File and server control from anywhere
-> - Clean, developer-friendly interface
+## 📌 Featured Projects
+- **MyFlix** – A media manager for your favorite shows and movies  
+- **Hiphp** – A BackDoor for remote control of websites utilizing the PHP
+- **Ashar** – Text encryption with password protection  
+- And more on [my GitHub repositories](https://github.com/yasserbdj96?tab=repositories)
 
-Stay tuned for the full release — **[WebHole](https://github.com/yasserbdj96/WebHole)** is set to redefine remote web management.
+## 📫 Let's Connect
+Feel free to explore my work or get in touch:
+- 🌐 Website: [yasserbdj96.github.io](https://yasserbdj96.github.io/)
+- 📧 Email: Available on my website
+- 💬 Let's build something awesome together!
+
+---
+
+> *"all posts <a href="#yasserbdj96">#yasserbdj96</a> ,all views my own."*

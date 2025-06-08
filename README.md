@@ -21,7 +21,7 @@ Welcome to my GitHub profile.
 ## 📫 Let's Connect
 Feel free to explore my work or get in touch:
 - 🌐 Website: [yasserbdj96.github.io](https://yasserbdj96.github.io/)
-- 📧 Email: [yasserbdj96@gmail.com](yasserbdj96@gmail.com)
+- 📧 Email: [yasserbdj96@gmail.com](mailto:yasserbdj96@gmail.com)
 - 💬 Let's build something awesome together!
 
 ---

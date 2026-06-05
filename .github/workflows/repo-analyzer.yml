@@ -2,216 +2,85 @@ name: Repository Scanner
 
 on:
   push:
+    branches: [ main, master, develop ]
+  pull_request:
     branches: [ main, master ]
-  workflow_dispatch:
 
 jobs:
-  scan-repository:
+  scan:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-      
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests PyGithub
-      
-      - name: Run repository scanner
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO_NAME: ${{ github.repository }}
-          API_URL: "https://38df-41-108-26-206.ngrok-free.app/api/scan-results"
-          API_KEY: "your_api_key_here"
-        run: |
-          python -c "
-import os
-import sys
-import json
-import requests
-from pathlib import Path
-import mimetypes
-
-def analyze_file(file_path):
-    '''Analyze a single file'''
-    try:
-        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-            lines = f.readlines()
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
         
-        total_lines = len(lines)
-        empty_lines = 0
-        comment_lines = 0
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
         
-        # Detect comments based on file extension
-        ext = Path(file_path).suffix.lower()
-        comment_chars = {
-            '.py': '#',
-            '.js': '//',
-            '.ts': '//',
-            '.jsx': '//',
-            '.tsx': '//',
-            '.java': '//',
-            '.c': '//',
-            '.cpp': '//',
-            '.h': '//',
-            '.rb': '#',
-            '.php': ['//', '#'],
-            '.go': '//',
-            '.rs': '//',
-            '.sh': '#'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install PyGithub requests
+        
+    - name: Run Repository Scanner
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SCANNER_API_URL: ${{ secrets.SCANNER_API_URL }}
+        SCANNER_API_KEY: ${{ secrets.SCANNER_API_KEY }}
+        REPO_NAME: ${{ github.repository }}
+        COMMIT_HASH: ${{ github.sha }}
+      run: |
+        python -c "
+        import os
+        import sys
+        import json
+        from github import Github
+        import requests
+        
+        # Initialize GitHub client
+        g = Github(os.environ['GITHUB_TOKEN'])
+        repo = g.get_repo(os.environ['REPO_NAME'])
+        
+        # Get commit data
+        commit = repo.get_commit(os.environ['COMMIT_HASH'])
+        
+        # Analyze changes (simplified for template)
+        results = {
+            'commit_hash': os.environ['COMMIT_HASH'],
+            'repository': os.environ['REPO_NAME'],
+            'files_changed': [file.filename for file in commit.files],
+            'timestamp': commit.commit.author.date.isoformat() if commit.commit.author.date else None,
+            'message': commit.commit.message
         }
         
-        comment_char = comment_chars.get(ext, None)
-        
-        for line in lines:
-            line = line.strip()
-            if not line:
-                empty_lines += 1
-            elif comment_char:
-                if isinstance(comment_char, list):
-                    if any(line.startswith(c) for c in comment_char):
-                        comment_lines += 1
-                elif line.startswith(comment_char):
-                    comment_lines += 1
-        
-        code_lines = total_lines - empty_lines - comment_lines
-        
-        return {
-            'path': str(file_path),
-            'total_lines': total_lines,
-            'code_lines': code_lines,
-            'empty_lines': empty_lines,
-            'comment_lines': comment_lines,
-            'size': os.path.getsize(file_path),
-            'extension': ext
-        }
-    except Exception as e:
-        return None
-
-def analyze_binary_file(file_path):
-    '''Analyze binary/image files'''
-    try:
-        size = os.path.getsize(file_path)
-        mime_type = mimetypes.guess_type(file_path)[0] or 'unknown'
-        
-        result = {
-            'path': str(file_path),
-            'size': size,
-            'mime_type': mime_type,
-            'type': 'binary'
+        # Send to your website
+        headers = {
+            'Content-Type': 'application/json',
+            'X-API-Key': os.environ['SCANNER_API_KEY']
         }
         
-        # Check if it's an image
-        if mime_type and mime_type.startswith('image/'):
-            result['type'] = 'image'
-            try:
-                from PIL import Image
-                with Image.open(file_path) as img:
-                    result['width'] = img.width
-                    result['height'] = img.height
-            except:
-                pass
+        response = requests.post(
+            os.environ['SCANNER_API_URL'],
+            json=results,
+            headers=headers
+        )
         
-        return result
-    except Exception as e:
-        return None
-
-def scan_repository():
-    '''Scan entire repository'''
-    results = {
-        'files': [],
-        'images': [],
-        'binaries': [],
-        'summary': {
-            'total_files': 0,
-            'total_lines': 0,
-            'total_code_lines': 0,
-            'total_empty_lines': 0,
-            'total_comment_lines': 0,
-            'total_size': 0
-        }
-    }
-    
-    # Image extensions
-    image_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp', '.ico'}
-    binary_extensions = {'.exe', '.dll', '.so', '.dylib', '.bin', '.dat'}
-    
-    for file_path in Path('.').rglob('*'):
-        if file_path.is_file():
-            # Skip .git directory
-            if '.git' in str(file_path):
-                continue
-            
-            ext = file_path.suffix.lower()
-            
-            if ext in image_extensions:
-                result = analyze_binary_file(file_path)
-                if result:
-                    results['images'].append(result)
-                    results['summary']['total_size'] += result['size']
-            elif ext in binary_extensions:
-                result = analyze_binary_file(file_path)
-                if result:
-                    results['binaries'].append(result)
-                    results['summary']['total_size'] += result['size']
-            else:
-                result = analyze_file(file_path)
-                if result:
-                    results['files'].append(result)
-                    results['summary']['total_files'] += 1
-                    results['summary']['total_lines'] += result['total_lines']
-                    results['summary']['total_code_lines'] += result['code_lines']
-                    results['summary']['total_empty_lines'] += result['empty_lines']
-                    results['summary']['total_comment_lines'] += result['comment_lines']
-                    results['summary']['total_size'] += result['size']
-    
-    return results
-
-# Run the scan
-repo_name = os.environ.get('REPO_NAME', 'unknown')
-api_url = os.environ.get('API_URL')
-api_key = os.environ.get('API_KEY')
-
-print(f'Scanning repository: {repo_name}')
-results = scan_repository()
-results['repository'] = repo_name
-results['scan_timestamp'] = __import__('datetime').datetime.now().isoformat()
-
-# Send results to your website
-if api_url and api_key:
-    headers = {
-        'Content-Type': 'application/json',
-        'X-API-Key': api_key
-    }
-    try:
-        response = requests.post(api_url, json=results, headers=headers, timeout=30)
         if response.status_code == 200:
-            print('Results sent successfully to your website')
+            print('Scan results sent successfully')
         else:
             print(f'Failed to send results: {response.status_code}')
-    except Exception as e:
-        print(f'Error sending results: {str(e)}')
-else:
-    # Save results locally for testing
-    with open('scan_results.json', 'w') as f:
-        json.dump(results, f, indent=2)
-    print('Results saved to scan_results.json')
-
-print(f'Scan complete! Found {results["summary"]["total_files"]} files')
-print(f'Total lines: {results["summary"]["total_lines"]}')
-print(f'Code lines: {results["summary"]["total_code_lines"]}'
-)
-          "
-      - name: Upload scan results
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: scan-results
-          path: scan_results.json
+            sys.exit(1)
+        "
+        
+    - name: Upload scan results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: scan-results
+        path: |
+          *.json
+          scan_*.txt

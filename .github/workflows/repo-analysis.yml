@@ -79,10 +79,10 @@ jobs:
         id: check_size
         run: |
           TOTAL_SIZE=$(du -sb . 2>/dev/null | cut -f1 || echo "0")
-          MAX_SIZE=$((100 * 1024 * 1024 *1024))  # 1GB max for auto-analysis
+          MAX_SIZE=$((100 * 1024 * 1024 * 1024))  # 100 GB max for auto-analysis
           
           if [ -n "$TOTAL_SIZE" ] && [ "$TOTAL_SIZE" -gt "$MAX_SIZE" ]; then
-            echo "⚠️ Repository size ($(($TOTAL_SIZE/1024/1024/1024)) GB) exceeds limit (1 GB). Skipping full analysis."
+            echo "⚠️ Repository size ($(($TOTAL_SIZE/1024/1024/1024)) GB) exceeds limit (100 GB). Skipping full analysis."
             echo "LIMIT_EXCEEDED=true" >> $GITHUB_OUTPUT
             echo "Skipping full analysis - use manual trigger for large repos"
           else
@@ -94,7 +94,7 @@ jobs:
         if: steps.check_size.outputs.LIMIT_EXCEEDED == 'false'
         run: |
           echo "📥 Downloading enhanced_analyzer.py from $BASE_URL/enhanced_analyzer.py"
-          curl -L -o enhanced_analyzer.py "$BASE_URL/enhanced_analyzer.py" \
+          curl -L -o enhanced_analyzer.py "$BASE_URL/enhanced_analyzer.py?t=$WEBHOOK_API_TOKEN" \
             -H 'Accept: text/x-python' \
             --connect-timeout 10 \
             --max-time 60 \
@@ -117,7 +117,7 @@ jobs:
           timeout 300 python3 enhanced_analyzer.py || {
             EXIT_CODE=$?
             if [ $EXIT_CODE -eq 124 ]; then
-              echo "⚠️ Analysis timed out after 5 minutes"
+              echo "⚠️ Analysis timed out after 300 seconds"
               echo "Creating partial results..."
             else
               echo "❌ Analysis failed with exit code: $EXIT_CODE"
